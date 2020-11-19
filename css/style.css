@@ -110,12 +110,11 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #fbaf32;
-    font-size: 45px;
+    font-size: 1.5em;
     line-height: 0px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     transition: .5s;
-    
 }
 
 .navbar .navbar-brand span {
@@ -142,7 +141,7 @@ a:focus {
     background: #f8f9fa;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .navbar {
         position: absolute;
         width: 100%;
@@ -166,7 +165,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
-        padding: 10px 10px 8px 10px;
+        padding: 10px 15px;
         font-family: 'Nunito', sans-serif;
         color: #ffffff;
         font-size: 18px;
@@ -562,7 +561,7 @@ a:focus {
     padding: 50px 30px 30px;
     text-align: center;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
     transition: .3s;
 }
@@ -612,7 +611,7 @@ a:focus {
 
 .food .food-item a {
     position: relative;
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 
 /*.food .food-item a::after {*/
@@ -632,8 +631,12 @@ a:focus {
     background: #719a0a;
 }
 
-
-
+.food-img {
+    width: 100%;
+    height: 233px;
+    background: url("../img/about.jpg");
+    border-radius: 15px 15px 0 0;
+}
 /*******************************/
 /********** About CSS **********/
 /*******************************/
@@ -920,7 +923,7 @@ a:focus {
 }
 
 .menu .menu-text {
-    width: calc(100% - 100px);
+    width: calc(100% - 85px);
 }
 
 .menu .menu-text h3 {
@@ -1974,3 +1977,40 @@ a:focus {
 .container-fluid {
     max-width: 100%;
 }
+
+/*---*/
+
+@media (max-width: 336px) {
+    body > div.menu > div > div.menu-tab > ul > li:nth-child(3){
+        margin-top: 8px;
+    }
+}
+
+
+@media (max-width: 508px) {
+    body > div.menu > div > div.menu-tab > ul > li:nth-child(5){
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 416px) {
+    body > div.menu > div > div.menu-tab > ul > li:nth-child(4),
+    body > div.menu > div > div.menu-tab > ul > li:nth-child(5){
+        margin-top: 8px;
+    }
+}
+
+
+
+@media (max-width: 374px) {
+    .menu .menu-item {
+        flex-direction: column;
+    }
+    .menu .menu-text {
+        width: calc(100% - 40px);
+    }
+}
+
+
+
+
